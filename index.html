@@ -93,6 +93,14 @@
             z-index: 10;
         }
 
+        #madeBy {
+            display: flex;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+background: #ffffff;
+            }
+        
         .firework {
             position: absolute;
             width: 8px;
@@ -130,6 +138,7 @@
         <button id="restartBtn" style="display:none;">Сыграть ещё</button>
         <div class="fireworks" id="fireworks"></div>
     </div>
+    <span id="madeBy">Made by Muhammad A.</span>
     <script>
         let secret, attempts;
         const guessInput = document.getElementById('guessInput');
